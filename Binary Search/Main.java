@@ -8,7 +8,7 @@ int target=Integer.parseInt(c.readLine("enter target: "));
 for(int i=0;i<array.length;i++){
 	array[i]=i;
 }
-int index=Arrays.binarySearch(array,target);
+int index=Arrays.binarySearch(array,target); //built in method
 if(index!=-1){
 	System.out.println("Element found at index "+index);
 }else{
@@ -17,3 +17,5 @@ if(index!=-1){
 
 }
 }
+
+//avg case --> O(log(n))
