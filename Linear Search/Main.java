@@ -23,3 +23,5 @@ else
 	System.out.println("Element not found");
 }
 }
+
+//avg case time compleity --> O(n)
