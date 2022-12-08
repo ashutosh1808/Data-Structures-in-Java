@@ -1,7 +1,13 @@
+import java.io.*;
 public class Main{
 public static void main(String...args){
-int[] array={1,2,3,4,5,6,7};
-int index=interpolationSearch(array,5);
+Console c=System.console();
+int n=Integer.parseInt(c.readLine("enter n: "));
+int[] array=new int[n];
+for(int i=0;i<n;i++)
+	array[i]=Integer.parseInt(c.readLine("enter element: "));
+int target=Integer.parseInt(c.readLine("enter target: "));
+int index=InterpolationSearch(array,target);
 if(index!=-1)
 	System.out.println("Element found at index "+(index+1));
 else
